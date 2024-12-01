@@ -84,7 +84,7 @@ MelSpectrogram(
 
 ## Training
 
-The model is trained using a supervised learning approach with the following settings:
+The model is trained using a supervised learning approach with the following parameters:
 - **Optimizer:** Adam
 - **Loss Function:** Cross Entropy
 - **Batch Size:** 10
