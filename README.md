@@ -2,6 +2,9 @@
 
 The **Acoustic Species Classification** project aims to identify bird species from audio recordings using deep learning. This approach leverages passive acoustic monitoring and multi-class classification to facilitate biodiversity assessments and conservation strategies by automating species identification over large spatial scales.
 
+![image](https://github.com/user-attachments/assets/a54dbcd0-f205-4f7d-abc7-8d811058656d)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -46,6 +49,8 @@ The dataset consists of audio recordings from the Xeno-canto database, featuring
 
 The project utilizes the EfficientNet-B0 architecture, known for its balance between performance and computational efficiency. This model is particularly suited for image classification tasks and has been adapted here for audio spectrogram classification.
 
+![image](https://github.com/user-attachments/assets/489f0498-9aa3-4252-b1bb-a3b3d6ee1d56)
+
 ## Data Preprocessing
 
 The audio data processing pipeline consists of several critical stages to prepare the data for model training:
@@ -53,6 +58,9 @@ Audio Preprocessing
 - Audio recordings are standardized to 32 kHz sampling rate and converted to OGG format.
 - Noise reduction and filtering techniques are applied to remove unwanted background interference.
 - Audio signals are normalized to maintain consistent amplitude levels across the dataset.
+
+![image](https://github.com/user-attachments/assets/90f77b36-2178-4dda-8fa7-378086630e8f)
+
 
 ### Feature Extraction
 Raw audio is converted into mel spectrograms using Short-Time Fourier Transform3
@@ -83,6 +91,8 @@ The model is trained using a supervised learning approach with the following set
 - **Epochs:** 10
 - **Learning Rate:** 0.0001
 
+![image](https://github.com/user-attachments/assets/d4343c4c-13e4-43fb-ab21-91ac67131198)
+
 
 ## Results
 
@@ -93,6 +103,9 @@ EfficientNet-B0 outperformed other models like ResNet50 and VGG16 in terms of va
 | ResNet50 | 73.02% | 0.17 | 0.63 | 95.00% | 85.94% |
 | VGG16 | 77.08% | 0.20 | 0.77 | 94.55% | 83.14% |
 | EfficientNet B0 | 78.12% | 0.10 | 0.47 | 97.65% | 88.51% |
+
+
+![image](https://github.com/user-attachments/assets/1375f762-ce8c-4769-bfa7-dde78c298885)
 
 
 ## Future Work
